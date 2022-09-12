@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta name="author" content="Agustin C." charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Recopilador de informes</title>
+        <link rel="stylesheet" href="/src/style.css">
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    </head>
+    <body>
+        <section class="nav_bar">
+            <h1 class="title">Recopilador de Informes</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>                        <li><a href="#">Ingresar</a></li>
+                    <li><a href="#">Informes</a></li>
+                    <li><a href="#">Administración</a></li>
+                </ul>
+            </nav>
+        </section>
+        <main>
+            <section class="purpose">
+                <hgroup>
+                    <h2>Recopilador<br> de Informes</h2>
+                    <p>Da click en comenzar<br> para ingresar informes</p>
+                    <a href="form.html" target="_blank"><button id="start" type="button">Comenzar</button></a>
+                </hgroup>
+            </section>
+            <section class="info">
+                <h2 class="seguridad">Seguridad</h2>
+                <p class="seguridad ps">Los datos estan seguros. Solo tú podrás 
+                    acceder a la información de los informes
+                    de tu grupo.
+                </p>
+                <h2 class="informes">Informes</h2>
+                <p class="informes ps">Los datos estan seguros. Solo tú podrás 
+                    acceder a la información de los informes
+                    de tu grupo.
+                </p>
+                <h2 class="recordatorios">Recordatorios</h2>
+                <p id="last_p" class="recordatorios ps">Los datos estan seguros. Solo tú podrás 
+                    acceder a la información de los informes
+                    de tu grupo.
+                </p>
+            </section>
+        </main>
+        <footer>
+            <h1 class="footer_h1">Recopilador de informes</h1>
+            <p>Derechos reservados 2022</p>
+        </footer>
+        <script>
+            //$(".title").hide();
+            // $("p").hide();
+            // $("h2").css("color", "blue");
+            
+            // It is a good practice to add this:
+            $(document).ready(function() {
+            //    $("#start").click(function() {
+            //    alert("Let's continue");
+            //    });
+
+                /* $("#start").on("click", function() {
+                $("p").hide();
+                }) */
+
+            // You can add classes to elements
+
+            //    $("footer").addClass("newClass");
+            //    $("footer").removeClass("newClass");
+            /*    $("#btn").click( function() {
+                    $("footer").toggleClass("newClass");
+                }) */
+            })
+        </script>
+    </body>
+</html>

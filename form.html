@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Recopilador de informes</title>
+        <link rel="stylesheet" href="/src/styles.css">
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    </head>
+    <body>
+        <section class="nav_bar">
+            <h1 class="title">Recopilador de Informes</h1>
+            <!-- This is the navigation bar -->
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Ingresar</a></li>
+                    <li><a href="#">Informes</a></li>
+                    <li><a href="#">Administración</a></li>
+                </ul>
+            </nav>
+        </section>
+        <!-- This is the input form -->
+        <main>
+            <form>
+                <fieldset>
+                    <legend>Ingresa tus datos</legend>
+                    <div class="divy">
+                        <p>
+                            <label>Nombre
+                                <input type="text" name="name" autocomplete="on" required>
+                            </label>
+                        </p>
+                    </div>
+                    <div class="divy">
+                        <p>
+                            <label>Contraseña
+                                <input type="password" name="password" autocomplete="on" required>
+                            </label>
+                        </p>
+                    </div>
+                    <button id="cancel" type="reset">Cancelar</button>
+                    <button id="continue" type="submit" name="continue">Continuar</button>
+                </fieldset>
+            </form>
+        </main>
+        <footer>
+            <h1 class="footer_h1">Recopilador de informes</h1>
+            <p>Derechos reservados 2022</p>
+        </footer>
+    </body>
+</html>

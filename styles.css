@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+    flex-basis: 100%;
+    font-family: monospace;
+}
+
+.title {
+    border: 1px solid black;
+    border-block-end: 0px;
+    background-color: #607EAA;
+    margin: 0px;
+    font-size: 200%;
+}
+
+body {
+    margin: 0px;
+    text-align: center;
+    background-color: #F9F5EB
+}
+
+nav {
+    background-color: #EAE3D2;
+    border: 1px solid black;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    background-color: white;
+}
+
+main {
+    background-color: #F9F5EB;
+    padding: 10rem 0rem;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    border: solid 1px black;
+    flex-basis: 15rem;
+    block-size: 25rem;
+}
+
+fieldset {
+    border: none;
+    block-size: 18rem;
+}
+
+legend {
+    font-size: larger;
+}
+
+.divy p {
+    flex-basis: 50%;
+    text-align: justify;
+}
+
+label {
+    display: block;
+}
+
+input {
+    display: block;
+}
+
+button {
+    margin: .2rem 0rem;
+}
+
+li {
+    list-style: none;
+}
+
+footer {
+    border: solid 1px black;
+    background-color: #EAE3D2;
+}
+
+.footer_h1 {
+    font-size: 100%;
+}
+
+ul {
+    padding: 0px;
+}
+
+.divy {
+    display: flex;
+    justify-content: center;
+    margin: 1.3rem 0rem;
+}
+
+@media (min-width:280px) {
+    form {
+        flex-basis: 20rem;
+        block-size: 20rem;
+    }
+
+    legend {
+        font-size: 150%;
+    }
+}
+
+@media (min-width:700px) {
+    main {
+        padding: 15rem 0rem;
+    }
+
+    form {
+        flex-basis: 30rem;
+        block-size: 28rem;
+    }
+
+    fieldset {
+        block-size: 28rem;
+    }
+
+    p label {
+        font-size: larger;
+    }
+
+    input {
+        block-size: 2rem;
+    }
+
+    #cancel {
+        margin: 0rem .6rem 0rem 0rem;
+    }
+
+    .divy {
+        margin: 2.5rem 0rem;
+    }
+
+    legend {
+        font-size: xx-large;
+    }
+
+    button {
+        block-size: 2rem;
+    }
+
+    button:hover {
+        background-color: black;
+        color: white;
+        block-size: 2.3rem;
+    }
+
+    nav {
+        grid-column: 2 / 4;
+        grid-row: 1 / 2;
+        display: flex;
+        justify-content: end;
+        background-color: #607EAA;
+    }
+
+    .nav_bar {
+        display: grid;
+        grid-template-columns: .5fr 5fr 5fr .5fr;
+        align-items: baseline;
+    }
+
+    ul {
+        display: flex;
+        flex-basis: 55%;
+    }
+
+    li {
+        display: inline;
+    }
+
+    .title {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        z-index: 1;
+        background-color: transparent;
+        border: none;
+        font-size: 150%;
+        justify-self: center;
+    }
+}
